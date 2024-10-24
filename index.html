@@ -5,54 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Artistas Brasileiros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
       .resultados-pesquisa {
-        display: none; 
+        display: none;
       }
     </style>
 </head>
 <body>
-    <header>
-       <h1>Artistas do Brasil</h1>
-    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><strong>Artistas Brasileiros</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex" role="search" onsubmit="event.preventDefault(); pesquisar();">
+              <input id="campo-pesquisa" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" >Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     <main>
-        <section>
-        <input type="text" id="campo-pesquisa" placeholder="Digite o nome do artista" >
-
-        <button onclick="pesquisar()">Pesquisar</button>
-
-        </section>
-   <section class="resultados-pesquisa" 
-         Id="resultados-pesquisa">
-           <div class="item-resultado">
-
-            <a href="https://pt.wikipedia.org/wiki/Liniker" target="_blank"><h2>Liniker</h2></a>
-            <p class="descricao-meta">Liniker, com sua voz potente e carisma inegável, emergiu como uma das mais importantes artistas da nova geração da música brasileira. Sua sonoridade única, que mescla elementos do soul, R&B, MPB e ritmos brasileiros, conquistou o público e a crítica especializada. Com letras que abordam temas como amor, identidade, questões sociais e raciais</p>
-       <a href="https://open.spotify.com/intl-pt/artist/2O6q06oNcmOIPg1qidSU3C" target="_blank">Ouça agora no spotify</a>
-    
-    </div>
-    <div class="item-resultado">
-       <a href="https://www.last.fm/pt/music/Nattan/+wiki" target="_blank"> <h2>Nattan</h2></a>
-        <p class="descricao-meta">Nattan, o fenômeno do piseiro, conquistou o Brasil com seus hits contagiante e letras que falam sobre o dia a dia do povo. Sua música, marcada por batidas fortes e melodias envolventes, se tornou a trilha sonora de diversas festas e celebrações.</p>
-        <a href="https://open.spotify.com/intl-pt/artist/1SXhEXzOTF7YeuQX59m7pT" target="_blank">Ouça agora no Spotify</a>
-      </div>
-      <div class="item-resultado">
-        <a href="https://pt.wikipedia.org/wiki/Simone_Mendes" target="_blank"><h2>Simone Mendes</h2></a>
-        <p class="descricao-meta">Simone Mendes, da dupla Simone e Simaria, é uma das maiores cantoras do sertanejo feminino. Com sua voz marcante e presença de palco, ela conquistou milhões de fãs em todo o Brasil. Suas músicas, que falam sobre amor, sofrimento e superação, marcaram gerações.</p>
-        <a href="https://open.spotify.com/intl-pt/artist/2eK9gcJQ6uqVvJL63dnOM3" target="_blank">Ouça agora no Spotify</a>
-      </div>
-      <div class="item-resultado">
-        <a href="https://pt.wikipedia.org/wiki/Pabllo_Vittar" target="_blank"><h2>Pabllo Vittar</h2></a>
-        <p class="descricao-meta">Pabllo Vittar é um dos maiores nomes da música pop brasileira. Com seus hits eletrizantes e performances exuberantes, ela se tornou um ícone LGBTQIA+ e um símbolo de empoderamento. Suas letras, que falam sobre amor, liberdade e diversidade, inspiram milhões de pessoas ao redor do mundo.</p>
-        <a href="https://open.spotify.com/intl-pt/artist/6tzRZ39aZlNqlUzQlkuhDV" target="_blank">Ouça agora no Spotify</a>
-      </div>
-    </section>
+      <section class="resultados-pesquisa" id="resultados-pesquisa">
+      </section>
     </main>
 
     <footer>
         <p>2024 - Artistas do Brasil. Todos os direitos reservados</p>
         <p>Entre em contato pelo email: aisac808@gmail.com</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="dados.js"></script>
     <script src="app.js"></script>
 </body>
