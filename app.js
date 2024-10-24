@@ -3,12 +3,11 @@ function pesquisar() {
   const valorPesquisa = inputPesquisa.value.toLowerCase();
   const resultados = document.getElementById("resultados-pesquisa");
 
-
   const artistasFiltrados = artistas.filter(artista =>
-    artista.titulo.toLowerCase().includes(valorPesquisa) || artista.descricao.toLowerCase().includes(valorPesquisa)
+    artista.titulo.toLowerCase().includes(valorPesquisa) || 
+    artista.descricao.toLowerCase().includes(valorPesquisa)
   );
 
- 
   let html = "";
   if (artistasFiltrados.length > 0) {
     artistasFiltrados.forEach(artista => {
@@ -21,10 +20,10 @@ function pesquisar() {
       `;
     });
     resultados.innerHTML = html;
-    resultados.style.display = 'block'; 
+    resultados.style.display = 'block';
   } else {
     resultados.innerHTML = "<p>Nenhum resultado encontrado.</p>";
-    resultados.style.display = 'block'; 
+    resultados.style.display = 'block';
+  }
 }
 
-}
