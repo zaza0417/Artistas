@@ -1,7 +1,7 @@
 body {
     font-family: 'Pixelify Sans', sans-serif; 
-    background: linear-gradient(to bottom, #F7DF1E, #00A859); 
-    color: #002776; 
+    background-color: #F5F5F5; 
+    color: #333333; 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
@@ -21,15 +21,15 @@ main {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #FFDF00 !important; 
-    color: #002776; 
+    background-color: #E0E0E0; 
+    color: #333333; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 h1 {
     font-family: 'Pixelify Sans', sans-serif;
     font-size: 2.5rem; 
-    color: #FF4500; 
+    color: #2C3E50; 
     text-align: center;
     letter-spacing: 0.4rem;
 }
@@ -47,9 +47,9 @@ section input {
     padding: 1rem;
     border-radius: 1.5rem; 
     margin-bottom: 1rem; 
-    color: #002776; 
+    color: #333333; 
     font-size: 1rem; 
-    background-color: #FFF8DC; 
+    background-color: #FFFFFF; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
@@ -57,15 +57,15 @@ section button {
     padding: 0.8rem 1.2rem; 
     border: none; 
     border-radius: 1.5rem; 
-    background-color: #F7DF1E; 
-    color: #002776; 
+    background-color: #FF6B6B; 
+    color: #FFFFFF; 
     font-size: 1rem; 
     cursor: pointer; 
     transition: background-color 0.3s, color 0.3s;
 }
 
 section button:hover {
-    background-color: #FF4500; 
+    background-color: #FF6347; 
     color: #FFFFFF; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
@@ -77,13 +77,13 @@ section button:hover {
     margin-top: 1rem; 
     padding: 1rem; 
     border-radius: 0.6rem; 
-    background-color: #002776; 
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #333333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .item-resultado {
-    background: #009739; 
+    background: #6dc2c2; 
     border-radius: 0.6rem; 
     padding: 1rem; 
     margin-bottom: 1rem;
@@ -92,12 +92,12 @@ section button:hover {
 
 .item-resultado h2 {
     font-size: 1.5rem;
-    color: #FFDF00; 
+    color: #FFFFFF; 
 }
 
 footer {
-    background-color: #009739; 
-    color: #FFFFFF; 
+    background-color: #E0E0E0; 
+    color: #333333; 
     text-align: center; 
     padding: 1rem; 
     width: 100%; 
